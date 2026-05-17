@@ -3,5 +3,4 @@
 
 int main() {
     printf("Hello git\n");
-    //github is a pretty cool thing to mess with
 }
