@@ -1,14 +1,26 @@
 //this is a new file in first commit
 #include <stdio.h>
+#include <string.h>
+
+void printString(char str[], int size) {
+    for (int i = 0; i < size; i++)
+    {
+        printf("%c", str[i]);
+    }
+
+    printf("\n");
+}
 
 int main() {
-    int x, y;
-    printf("Hello git\n");
+    int x, y, strSize, result;
+    char eqn[50];
 
-    printf("ins first num: ");
-    scanf("%d", &x);
-    printf("ins seccond num: ");
-    scanf("%d", &y);
+    printf("What is your equation?: ");
+    scanf("%s", &eqn);
 
-    printf("%d + %d = %d\n", x, y, x + y);
+    strSize = strlen(eqn);
+    printf("%d\n", strSize);
+
+    printString(eqn, strSize);
+
 }
