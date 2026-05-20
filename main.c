@@ -11,13 +11,17 @@ void printString(char str[], int size) {
     printf("\n");
 }
 
+
+
 int main() {
     int x, y, strSize, result;
     char eqn[50];
 
     printf("What is your equation?: ");
-    scanf("%s", &eqn);
+    scanf("%s", eqn);
 
+    x = eqn[0] - '0';
+    printf("ascii val converted: %d\n\n", x);
     strSize = strlen(eqn);
     printf("%d\n", strSize);
 
